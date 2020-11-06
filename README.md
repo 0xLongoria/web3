@@ -36,5 +36,6 @@ The following examples showcase basic commands and functionality capable with we
 2. [Create Account](./src/2_createAccount)
 3. [Read Contract](./src/3_readContract)
 4. [Build Transaction](./src/4_buildTx)
+5. [Deploy Contract](./src/5_deployContract)
 
 * [Additional Features](./src/addlFeatures)
