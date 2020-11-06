@@ -3,26 +3,21 @@ var url = '<INFURA/GANACHE_ENDPOINT>' // update this
 var web3 = new Web3(url)
 
 var Tx = require('@ethereumjs/tx').Transaction
-var Common = require('@ethereumjs/common').default // https://github.com/ethereumjs/ethereumjs-common/releases/tag/v1.0.0
+var Common = require('@ethereumjs/common').default
 
-const account1 = '<ETH_ACCOUNT_1>' // update this
-const account2 = '<ETH_ACCOUNT_2>' // update this
-
-// Private keys should be exported to environment variables
-// i.e. on command line: > export PRIVATE_KEY_1='<your_priv_key>'
+const account1 = process.env.ADDRESS_1
 const privateKey1 = Buffer.from(process.env.PRIVATE_KEY_1, 'hex')
-const privateKey2 = Buffer.from(process.env.PRIVATE_KEY_2, 'hex')
 
-// Send signed transaction 
 web3.eth.getTransactionCount(account1, (err, txCount) => {
+	// Smart contract data
+	const data = '<CONTRACT_BYTE_CODE_HEX>' // Compile contract in Remix/Truffle
 
 	// Build the transaction
 	const txParams = {
 		nonce: web3.utils.toHex(txCount),
-		to: account1,
-		value: web3.utils.toHex(web3.utils.toWei('0', 'ether')),
-		gasLimit: web3.utils.toHex(21000),
-		gasPrice: web3.utils.toHex(web3.utils.toWei('50', 'gwei'))
+		gasLimit: web3.utils.toHex(1000000), // Raise this
+		gasPrice: web3.utils.toHex(web3.utils.toWei('50', 'gwei')),
+		data: data
 	}
 
 	// Sign the transaction

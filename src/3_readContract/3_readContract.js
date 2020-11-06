@@ -3,30 +3,30 @@ var url = '<INFURA/GANACHE_ENDPOINT>' // update this
 var web3 = new Web3(url)
 
 // update variables below with token contract data
-var abi = '<CONTRACT_ABI>' // remove quotations
-var address = '<CONTRACT_ADDR>'
+var contractABI = '<CONTRACT_ABI>' // e.g. [{"constant": true, ...}]
+var contractAddress = '<CONTRACT_ADDR>' // address of deployed (token) contract
 var accountAddress = '<ACCOUNT_ADDR>' // account with a token balance
 
-var contract = new web3.eth.Contract(abi, contractAddress)
+var tokenContract = new web3.eth.Contract(contractABI, contractAddress)
 
 console.log('contract methods:', contract.methods)
 
-contract.methods.name()
+tokenContract.methods.name()
 	.call((err, result) => { 
 		console.log('name:', result) 
 	})
 
-contract.methods.symbol()
+tokenContract.methods.symbol()
 	.call((err, result) => { 
 		console.log('symbol:', result) 
 	})
 
-contract.methods.totalSupply()
+tokenContract.methods.totalSupply()
 	.call((err, result) => { 
 		console.log('totalSupply:', result) 
 	})
 
-contract.methods.balanceOf(accountAddress)
+tokenContract.methods.balanceOf(accountAddress)
 	.call((err, result) => { 
 		console.log('balanceOf', accountAddress, ':', result) 
 	})
