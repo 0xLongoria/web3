@@ -53,7 +53,7 @@ Remix also supports testing, debugging and deploying of smart contracts and much
 
 In Remix, a plug-in is provided to compile solidity contracts. Below, we can compile our contract `DappToken.sol`.
 
-![Remix](./remix.png)
+![Remix](./remixCompile.png)
 
 Remix gives us the ability to easily view a variety of contract compilation details. Included in these details is the hexidecimal bytecode needed in the `data` field of our transaction object. We can also get the contract abi if needed to read and make transactions to the contract once deployed.   
 

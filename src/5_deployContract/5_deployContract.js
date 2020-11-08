@@ -17,7 +17,7 @@ web3.eth.getTransactionCount(account1, (err, txCount) => {
 		nonce: web3.utils.toHex(txCount),
 		gasLimit: web3.utils.toHex(1000000), // Raise this
 		gasPrice: web3.utils.toHex(web3.utils.toWei('50', 'gwei')),
-		data: data
+		data: '0x' + data // Add '0x' if not included in 'data'
 	}
 
 	// Sign the transaction
