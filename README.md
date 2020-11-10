@@ -37,5 +37,6 @@ The following examples showcase basic commands and functionality capable with we
 3. [Read Contract](./src/3_readContract)
 4. [Build Transaction](./src/4_buildTx)
 5. [Deploy Contract](./src/5_deployContract)
+6. [Write to Contract](./src/6_writeToContract)
 
 * [Additional Features](./src/addlFeatures)
