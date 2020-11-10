@@ -47,9 +47,9 @@ web3.eth.getTransactionCount(account1, (err, txCount) => {
 })
 ```
 
-The above code builds a transaction to write (as opposed to read) to a contract, an operation that will change state on the blockchain. We do this by sending a transaction to the contract with  details for the function we are calling in the `data` parameter of the Transaction object. 
+The above code builds a transaction that writes to a contract - an operation that will update the state of the Ethereum network. This is done by sending a transaction to the contract with details for the function we are calling in the `data` parameter of the Transaction object. 
 
-In this particular example, we are calling the `transfer` method on `contract` to send 1000 tokens to `account2`. The `transfer` method can be used on any ERC20 token contract, such as the one used in the previous example. 
+In this particular example, we are calling the `transfer` method on `contract` to send 1000 tokens to `account2`. The `transfer` method can be used on any ERC20 token contract, such as the one used in the [previous example](../5_deployContract). 
 
 ### methods.myMethod.encodeABI
 Encodes the ABI for this method. The resulting hex string is 32-bit function signature hash plus the passed parameters in Solidity tightly packed format. This can be used to send a transaction, call a method, or pass it into another smart contract’s method as arguments. Set the data field on web3.eth.sendTransaction options as the encodeABI() result and it is the same as calling the contract method with contract.myMethod.send().
