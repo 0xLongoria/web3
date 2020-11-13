@@ -10,6 +10,7 @@ web3.eth.accounts.create()
 
 ### eth.accounts.create()  
 Generates an account object with private key and public key.  
+
 [API Reference - web3.eth.accounts.create](https://web3js.readthedocs.io/en/v1.3.0/web3-eth-accounts.html?highlight=create#create)
 ```
 > web3.eth.accounts.create([entropy]);

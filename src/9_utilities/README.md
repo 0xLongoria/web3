@@ -26,14 +26,16 @@
 ```
 
 ### eth.getGasPrice()
-Returns the current gas price oracle. The gas price is determined by the last few blocks median gas price.
+Returns the current gas price oracle. The gas price is determined by the last few blocks median gas price.  
+
 [API Reference - eth.getGasPrice](https://web3js.readthedocs.io/en/v1.3.0/web3-eth.html?highlight=getgasprice#getgasprice)
 ```
 web3.eth.getGasPrice([callback])
 ```
 
 ### utils.sha3() | utils.keccak256()
-Will calculate the sha3 of the input.
+Will calculate the sha3 of the input.  
+
 [API Reference - utils.sha3/keccak256](https://web3js.readthedocs.io/en/v1.3.0/web3-utils.html?highlight=sha3#sha3)
 ```
 web3.utils.sha3(string)
@@ -41,21 +43,21 @@ web3.utils.keccak256(string) // ALIAS
 ```
 
 ### utils.solitiySha3()
-Will calculate the sha3 of given input parameters in the same way solidity would. This means arguments will be ABI converted and tightly packed before being hashed.
+Will calculate the sha3 of given input parameters in the same way solidity would. This means arguments will be ABI converted and tightly packed before being hashed.  
 [API Reference - utils.soliditySha3](https://web3js.readthedocs.io/en/v1.3.0/web3-utils.html?highlight=sha3#soliditysha3)
 ```
 web3.utils.soliditySha3(param1 [, param2, ...])
 ```
 
 ### utils.randomHex()
-The randomHex library to generate cryptographically strong pseudo-random HEX strings from a given byte size.
+The randomHex library to generate cryptographically strong pseudo-random HEX strings from a given byte size.  
 [API Reference - utils.randomHex](https://web3js.readthedocs.io/en/v1.3.0/web3-utils.html?highlight=randomhex#randomhex)
 ```
 web3.utils.randomHex(size)
 ```
 
 ### underscore.js
-web3.js ships with [underscore.js](http://underscorejs.org/). This can be helpful for debugging purposes.
+web3.js ships with [underscore.js](http://underscorejs.org/). This can be helpful for debugging purposes.  
 ```
 const _ = web3.utils._
 ```

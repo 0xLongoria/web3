@@ -55,7 +55,8 @@ We can call a specific value from the `events` Objects array to see what data a 
 ```
 
 ### myContract.getPastEvents()
-Gets past events for this contract.
+Gets past events for this contract.  
+
 [API Reference - web3.myContract.getPastEvents](https://web3js.readthedocs.io/en/v1.2.0/web3-eth-contract.html#getpastevents)
 ```
 myContract.getPastEvents(event[, options][, callback])

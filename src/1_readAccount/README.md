@@ -16,6 +16,7 @@ console.log('ether balance:', web3.utils.fromWei(balance, 'ether'))
 
 ### eth.getBalance()  
 Get the balance of an address at a given block.  
+
 [API Reference - web3.eth.getBalance](https://web3js.readthedocs.io/en/v1.3.0/web3-eth.html?highlight=getbalance#getbalance)
 ```
 > web3.eth.getBalance(address [, defaultBlock] [, callback])
@@ -23,6 +24,7 @@ Get the balance of an address at a given block.
 
 ### utils.fromWei()  
 Converts any wei value into a ether value.  
+
 [API Reference - web3.utils.fromWei](https://web3js.readthedocs.io/en/v1.3.0/web3-utils.html?highlight=fromwei#fromwei)
 ```
 > web3.utils.fromWei(number [, unit])

@@ -52,7 +52,7 @@ The above code builds a transaction that writes to a contract - an operation tha
 In this particular example, we are calling the `transfer` method on `contract` to send 1000 tokens to `account2`. The `transfer` method can be used on any ERC20 token contract, such as the one used in the [previous example](../5_deployContract). 
 
 ### methods.myMethod.encodeABI
-Encodes the ABI for this method. The resulting hex string is 32-bit function signature hash plus the passed parameters in Solidity tightly packed format. This can be used to send a transaction, call a method, or pass it into another smart contract’s method as arguments. Set the data field on web3.eth.sendTransaction options as the encodeABI() result and it is the same as calling the contract method with contract.myMethod.send().
+Encodes the ABI for this method. The resulting hex string is 32-bit function signature hash plus the passed parameters in Solidity tightly packed format. This can be used to send a transaction, call a method, or pass it into another smart contract’s method as arguments. Set the data field on web3.eth.sendTransaction options as the encodeABI() result and it is the same as calling the contract method with contract.myMethod.send().  
 
 [API Reference - encodeABI](https://web3js.readthedocs.io/en/v1.3.0/web3-eth-contract.html?highlight=contract%20methods#contract-encodeabi)
 ```

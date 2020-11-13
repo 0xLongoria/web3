@@ -25,28 +25,32 @@ web3.eth.getTransactionFromBlock(hash, 0).then(console.log)
 ```
 
 ### eth.getBlock()
-Returns a block matching the block number or block hash.
+Returns a block matching the block number or block hash.  
+
 [API Reference - getBlock](https://web3js.readthedocs.io/en/v1.3.0/web3-eth.html#getblock)
 ```
 web3.eth.getBlock(blockHashOrBlockNumber [, returnTransactionObjects] [, callback])
 ```
 
 ### eth.getBlockNumber()
-Returns the current block number.
+Returns the current block number.  
+
 [API Reference - getBlockNumber](https://web3js.readthedocs.io/en/v1.3.0/web3-eth.html#getblocknumber)
 ```
 web3.eth.getBlockNumber([callback])
 ```
 
 ### eth.getBlockTransactionCount()
-Returns the number of transaction in a given block.
+Returns the number of transaction in a given block.  
+
 [API Reference - getBlockTransactionCount](https://web3js.readthedocs.io/en/v1.3.0/web3-eth.html#getblocktransactioncount)
 ```
 web3.eth.getBlockTransactionCount(blockHashOrBlockNumber [, callback])
 ```
 
 ### eth.getTransactionFromBlock()
-Returns a transaction based on a block hash or number and the transaction’s index position.
+Returns a transaction based on a block hash or number and the transaction’s index position.  
+
 [API Reference - getTransactionFromBlock](https://web3js.readthedocs.io/en/v1.3.0/web3-eth.html#gettransactionfromblock)
 ```
 getTransactionFromBlock(hashStringOrNumber, indexNumber [, callback])
