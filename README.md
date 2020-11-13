@@ -39,4 +39,5 @@ The following examples showcase basic commands and functionality capable with we
 5. [Deploy Contract](./src/5_deployContract)
 6. [Write to Contract](./src/6_writeToContract)
 7. [Listen to Events](./src/7_listenToEvents)
-8. [Utilities](./src/utilities)
+8. [Inspecting Blocks](./src/8_inspectingBlocks)
+9. [Web3.js Utilities](./src/9_utilities)
