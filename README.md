@@ -32,12 +32,12 @@ let web3 = new Web3(Web3.givenProvider || "HTTP://127.0.0.1:7545");
 
 ## Code Examples
 The following examples showcase basic commands and functionality capable with web3.js.
-1. [Read Account](./src/1_readAccount)
-2. [Create Account](./src/2_createAccount)
-3. [Read Contract](./src/3_readContract)
-4. [Build Transaction](./src/4_buildTx)
-5. [Deploy Contract](./src/5_deployContract)
-6. [Write to Contract](./src/6_writeToContract)
-7. [Listen to Events](./src/7_listenToEvents)
-8. [Inspecting Blocks](./src/8_inspectingBlocks)
-9. [Web3.js Utilities](./src/9_utilities)
+1. [Read Account](./src/01_readAccount)
+2. [Create Account](./src/02_createAccount)
+3. [Read Contract](./src/03_readContract)
+4. [Build Transaction](./src/04_buildTx)
+5. [Deploy Contract](./src/05_deployContract)
+6. [Write to Contract](./src/06_writeToContract)
+7. [Listen to Events](./src/07_listenToEvents)
+8. [Inspecting Blocks](./src/08_inspectingBlocks)
+9. [Web3.js Utilities](./src/09_utilities)
