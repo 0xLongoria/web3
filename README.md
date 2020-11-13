@@ -38,5 +38,5 @@ The following examples showcase basic commands and functionality capable with we
 4. [Build Transaction](./src/4_buildTx)
 5. [Deploy Contract](./src/5_deployContract)
 6. [Write to Contract](./src/6_writeToContract)
-
-* [Additional Features](./src/addlFeatures)
+7. [Listen to Events](./src/7_listenToEvents)
+8. [Utilities](./src/utilities)

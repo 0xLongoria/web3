@@ -1,5 +1,5 @@
 # Additional features
-## addlFeatures.js
+## utilities.js
 ```
 1. const Web3 = require('web3')
 2. const web3 = // new Web3('<INFURA/GANACHE_ENDPOINT') // update this
