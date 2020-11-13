@@ -1,5 +1,5 @@
 # Inspecting Blocks  
-## 8_inspectingBlocks
+## 8_inspectingBlocks.js
 ```
 const Web3 = require('web3')
 const web3 = new Web3('https://mainnet.infura.io/v3/b26b1db571c741ad9f444d07f039a8c8')
